@@ -74,8 +74,6 @@ new Swiper('.promotion .swiper-container', {
   },
   on: {
     slideChangeTransitionStart: function() {
-      console.log(`현재페이지번호(real): ${this.realIndex}`);
-      console.log(`현재페이지번호(active): ${this.activeIndex}`);
       currentPage.textContent = this.realIndex+1;
     }
   }
